@@ -1,0 +1,11 @@
+domain: ydzs.io
+layout: go.kubebuilder.io/v2
+projectName: opdemo
+repo: opdemo
+resources:
+- group: app
+  kind: AppService
+  version: v1beta1
+version: 3-alpha
+plugins:
+  go.sdk.operatorframework.io/v2-alpha: {}
