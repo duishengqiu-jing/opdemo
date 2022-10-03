@@ -7,6 +7,18 @@ metadata:
   name: manager-role
 rules:
 - apiGroups:
+  - ""
+  resources:
+  - services
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
   - app.ydzs.io
   resources:
   - appservices
@@ -27,26 +39,14 @@ rules:
   - patch
   - update
 - apiGroups:
-    - apps
+  - apps
   resources:
-    - deployments
+  - deployments
   verbs:
-    - get
-    - list
-    - watch
-    - create
-    - update
-    - patch
-    - delete
-- apiGroups:
-    - ""
-  resources:
-    - services
-  verbs:
-    - get
-    - list
-    - watch
-    - create
-    - update
-    - patch
-    - delete
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
