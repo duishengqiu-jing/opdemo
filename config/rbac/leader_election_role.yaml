@@ -32,7 +32,7 @@ rules:
   - create
   - patch
 - apiGroups:
-    - "apps"
+    - apps
   resources:
     - deployments
   verbs:
